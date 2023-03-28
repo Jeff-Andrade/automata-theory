@@ -49,7 +49,6 @@ class Parser:
 
         def create_states():
             states = self.data["states"]
-            self.data["initial"]
             accepting = self.data["accepting"]
             for i in range(len(states)):
                 node = Node(name=states[i],
