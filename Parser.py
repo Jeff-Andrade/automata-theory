@@ -29,7 +29,7 @@ class Parser:
 
         dic = {}
 
-        fileData = fileData.split("# ")
+        fileData = fileData.split("#")
         fileData.pop(0)
 
         for i in range(len(fileData)):
