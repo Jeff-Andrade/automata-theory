@@ -1,18 +1,27 @@
 # states
-q0
-q1
-qf
+s0
+s1
+s2
+s3
 # initial
-q0
+s0
 # accepting
-qf
+s2
+s3
 # alphabet
 a
 b
+c
 # transitions
-q0:a>qf
-q0:b>q1
-q1:a>q1
-q1:b>q1
-qf:a>qf
-qf:b>qf
+s0:a>s0
+s0:b>s1
+s0:c>s0
+s1:a>s3
+s1:b>s2
+s1:c>s0
+s2:a>s2
+s2:b>s1
+s2:c>s3
+s3:a>s1
+s3:b>s2
+s3:c>s3
