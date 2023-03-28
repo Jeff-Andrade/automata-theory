@@ -1,0 +1,18 @@
+# states
+q0
+q1
+qf
+# initial
+q0
+# accepting
+qf
+# alphabet
+a
+b
+# transitions
+q0:a>qf
+q0:b>q1
+q1:a>q1
+q1:b>q1
+qf:a>qf
+qf:b>qf
