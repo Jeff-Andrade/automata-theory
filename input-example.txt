@@ -1,19 +1,19 @@
-# states
+#states
 s0
 s1
 s2
 s3
-# initial
+#initial
 s0
-# accepting
+#accepting
 s0
 s1
 s3
-# alphabet
+#alphabet
 a
 b
 c
-# transitions
+#transitions
 s0:a>s3
 s0:b>s0
 s0:c>s3
