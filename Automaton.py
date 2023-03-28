@@ -1,7 +1,3 @@
-from Connection import Connection
-from Node import Node
-
-
 class Automaton:
     def __init__(self, start):
         self.start = start
