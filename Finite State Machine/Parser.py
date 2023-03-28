@@ -3,6 +3,10 @@ from Node import Node
 from Automaton import Automaton
 
 
+"""
+Erro na atribuição de estado isAccepting na classe Node
+"""
+
 class Parser():
   def __init__(self, file):
     self.data = self.parse_text(file)
