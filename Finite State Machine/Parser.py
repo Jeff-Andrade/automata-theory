@@ -34,9 +34,9 @@ class Parser:
 
         for i in range(len(fileData)):
             fileData[i] = fileData[i].split("\n")
-            if i != 4:
-                fileData[i].pop(-1)
+            fileData[i].pop(-1)
             dic[fileData[i][0]] = fileData[i][1:]
+
 
         for i in range(len(dic["transitions"])):
             dic["transitions"][i] = parse_transition(dic["transitions"][i])
