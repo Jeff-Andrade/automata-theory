@@ -34,6 +34,8 @@ class Parser:
 
         for i in range(len(fileData)):
             fileData[i] = fileData[i].split("\n")
+            if i != 4:
+                fileData[i].pop(-1)
             dic[fileData[i][0]] = fileData[i][1:]
 
         for i in range(len(dic["transitions"])):
@@ -50,7 +52,7 @@ class Parser:
             accepting = self.data["accepting"]
             for i in range(len(states)):
                 node = Node(name=states[i],
-                            accepting=(states[i] in accepting))  # is only checking with the first accepting state
+                            accepting=(states[i] in accepting))
                 nodes[states[i]] = node
 
         def create_transitions():
