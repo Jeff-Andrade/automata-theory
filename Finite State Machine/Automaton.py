@@ -20,7 +20,8 @@ class Automaton:
 
     def print_path(self):
         for i in range(len(self.path)):
-            print(self.path[i], end="")
-            print(" -> ", end="")
-            if i == len(self.path) - 1:
+            if i != len(self.path) - 1:
+                print(self.path[i], end="")
+                print(" -> ", end="")
+            else:
                 print(self.path[i], end="")
