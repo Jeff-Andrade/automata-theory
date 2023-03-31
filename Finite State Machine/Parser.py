@@ -34,7 +34,8 @@ class Parser:
 
         for i in range(len(fileData)):
             fileData[i] = fileData[i].split("\n")
-            fileData[i].pop(-1)
+            if fileData[i][-1] == "":
+                fileData[i].pop(-1)
             dic[fileData[i][0]] = fileData[i][1:]
 
 
